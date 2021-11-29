@@ -31,10 +31,19 @@ Anchors serve to match a position between characters.
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 The dollar sign `$` matches the last character in the string. For example, in `abc`, c$ matches c in abc, while, a$ don't match.
+The caret sign `^` which is the opposite fo the dollar sign, matches the position before the first character of any string. For example, in `abc`, ^a matches a in abc, while, ^c don't match.
 
 ### Quantifiers
 
+Quantifiers indicate the number of characters to match
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+The plus `+` repeats the previous item once or more, also known as greedy. 
+The `{2,6}` repeats the previous items between 2 and 6 times.
+
 ### OR Operator
+Unfortunately, there are no `|` operators in my example. However, the OR Operator `|` is used the match characters or expressions either on the left or right side of the `|` operator.
 
 ### Character Classes
 
