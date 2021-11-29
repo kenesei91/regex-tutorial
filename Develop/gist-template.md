@@ -15,12 +15,8 @@ The above code or group of characters is an example of a regex that validates th
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
 - [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
@@ -46,21 +42,25 @@ The `{2,6}` repeats the previous items between 2 and 6 times.
 Unfortunately, there are no `|` operators in my example. However, the OR Operator `|` is used the match characters or expressions either on the left or right side of the `|` operator.
 
 ### Character Classes
+Cahracter Classes is also known as 'character set'. It matches only one of several characters in a group of characters.
 
-### Flags
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+For example, matching an a or e, use `[ae]`. You could use this in `gr[ae]y` to match either gray or grey.
+
 
 ### Grouping and Capturing
+Groups allow a group of characters to be combined to be used as a single unit.
 
-### Bracket Expressions
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+Capturing groups aim to treat multiple characters as a single unit. This can be achieved by placing the characters to be grouped inside of a parentheses. For example, `([a-z0-9_\.-]+)` createsa single group containing the letters 'a', 'z', and symbols '-', '\' and so on.
 
 ### Greedy and Lazy Match
-
-### Boundaries
-
-### Back-references
+Quantifiers can be either greedy or lazy. A greedy quantifier tends to match as many characters as possible, while a lazy quantifier tends to match few characters as possible.
 
 ### Look-ahead and Look-behind
-
+Unfortunately, my examples do not contain lookarounds. However, Lookahead and lookbehind, aslo known as 'lookaround', matches cahracters, but drops the match, and then returns only the result of a 'match or no match' status. 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Kenechukwu is an aspiring full stack web developer with seeking opportunities in field of technology with interest in wed design and creation. You can contact me at - [Github Repository](https://github.com/kenesei91/team-profile-generator)
