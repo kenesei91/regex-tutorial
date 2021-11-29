@@ -1,10 +1,13 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+Regex by definition stands for regular expression. According to the bootcamp module, it is a sequence of characters that defines a specific search pattern. This tutorial is going to explain how regex functions, by breaking down each component and describing what it does. This tutorial will also provide clarity and understaning of the code written to other developers and non-developers.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+The above code or group of characters is an example of a regex that validates that a user input is a valid email address. A breakdown of each individual code is explained detailing their functions and what they do.
+
 
 ## Table of Contents
 
@@ -23,6 +26,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+Anchors serve to match a position between characters.
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+The dollar sign `$` matches the last character in the string. For example, in `abc`, c$ matches c in abc, while, a$ don't match.
 
 ### Quantifiers
 
