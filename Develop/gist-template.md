@@ -63,4 +63,4 @@ Quantifiers can be either greedy or lazy. A greedy quantifier tends to match as 
 Unfortunately, my examples do not contain lookarounds. However, Lookahead and lookbehind, aslo known as 'lookaround', matches cahracters, but drops the match, and then returns only the result of a 'match or no match' status. 
 ## Author
 
-Kenechukwu is an aspiring full stack web developer with seeking opportunities in field of technology with interest in wed design and creation. You can contact me at - [Github Repository](https://github.com/kenesei91/team-profile-generator)
+Kenechukwu is an aspiring full stack web developer with seeking opportunities in field of technology with interest in wed design and creation. You can contact me at - [Github Repository](https://github.com/kenesei91/regex-tutorial)
